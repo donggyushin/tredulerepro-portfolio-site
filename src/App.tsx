@@ -5,20 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          신동규님의 포트폴리오 사이트
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      안녕하세요 중간의 연애 개발자 신동규입니다. 문의 사항은 010 9041 1019 혹은 donggyu9410@gmail.com 으로 연락해주세요.
     </div>
   );
 }
