@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles.scss'
+//@ts-ignore
 import Fade from 'react-reveal/Fade';
 
 
