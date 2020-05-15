@@ -1,5 +1,7 @@
 import React from 'react'
 import './styles.scss'
+import Fade from 'react-reveal/Fade';
+
 
 function Home() {
     return (
@@ -15,21 +17,26 @@ function Home() {
                 height: "167px"
             }} />
             <div className="my__name">
-                <div className="short_line"></div>
-                <span className="name">
-                    Shin Donggyu
+                <Fade left cascade>
+                    <div className="short_line"></div>
+                    <span className="name">
+                        Shin Donggyu
                 </span>
+                </Fade>
+
             </div>
             <div style={{
                 height: "80px"
             }} />
             <div className="introduce__me">
-                <p className="one">
-                    Making application that makes your life
+                <Fade left cascade>
+                    <p className="one">
+                        Making application that makes your life
                 </p>
-                <p className="three">
-                    fun and convenient
+                    <p className="three">
+                        fun and convenient
                 </p>
+                </Fade>
             </div>
         </div>
     )
