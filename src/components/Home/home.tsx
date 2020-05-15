@@ -77,7 +77,7 @@ function Home() {
                 height: "40px"
             }} />
             <p className="plane__text">
-                I’m not a career position yet, but I had managed (적당히 많은 이라는 뉘앙스는 어떻게 표현하는게 좋을까?) pretty lot of services during my University and I’m currently managing two services on the both side of web and App Store.
+                I’m not a career position yet, but I had managed (적당히 많은 이라는 뉘앙스는 어떻게 표현하는게 좋을지 알아보기) pretty lot of services during my University and I’m currently managing two services on the both side of web and App Store.
             </p>
 
             {/* </Fade> */}
