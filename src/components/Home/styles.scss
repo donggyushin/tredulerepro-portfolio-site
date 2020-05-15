@@ -1,0 +1,57 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .top {
+        display: flex;
+        width: 76%;
+        .black__box {
+            
+            width: 85px;
+            height: 130px;
+            background-color: black;
+            display: flex;
+            align-items: flex-end;
+            padding: 0;
+            .span {
+                font-size: 72px;
+                color: white;
+                position: relative;
+                top: 6px;
+                right: 9px;
+                font-family: 'Playfair Display', serif;
+            }
+        }
+    }
+
+    .my__name {
+        width: 76%;
+        display: flex;
+        align-items: center;
+
+        .name {
+            margin-left: 10px;
+            font-family: 'DM Mono', monospace;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 2px;
+            font-size: 14px;
+        }
+    }
+
+    .introduce__me {
+        width: 76%;
+        font-family: 'DM Mono', monospace;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-family: 'Playfair Display', serif;
+        font-size: 60px;
+        p {
+            line-height: 80px;
+        }
+    }
+}
+
+.short_line {
+    width: 50px;
+    height: 1px;
+    background-color: gainsboro;
+}
