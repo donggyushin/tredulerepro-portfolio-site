@@ -71,7 +71,7 @@ function Home() {
             }} />
             {/* <Fade bottom cascade> */}
             <p className="plane__text">
-                A developer who loves music and developing :) I enjoy making applications that can make people fun and convenient. I’m a fool stack developer, I have more concentrated on front-end development. Mostly, I have worked on area where web and mobile development. I really like to challenge to new areas which I’ve never experienced before, so I’m always ready to enter any area.
+                A developer who loves music and developing :) I enjoy making applications that can make people fun and convenient. I’m a fool stack developer, I have more concentrated on front-end development. Mostly, I have worked on area where web and mobile development. I really like to challenge to new areas which I’ve never experienced before, so I’m always ready to enter into any areas.
             </p>
             <div style={{
                 height: "40px"
