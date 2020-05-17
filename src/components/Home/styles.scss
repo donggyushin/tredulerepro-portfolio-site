@@ -1,3 +1,7 @@
+div:focus {
+    outline: none !important;
+}
+
 .Home {
     display: flex;
     flex-direction: column;
@@ -197,11 +201,7 @@
 
     .slider__container {
         width: 76%;
-        .slick-slide {
-            &:hover {
-                outline: none;
-            }
-        }
+        
         div {
             &:hover {
                 outline: none;
