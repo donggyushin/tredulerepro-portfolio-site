@@ -197,6 +197,11 @@
 
     .slider__container {
         width: 76%;
+        .slick-slide {
+            &:hover {
+                outline: none;
+            }
+        }
         div {
             &:hover {
                 outline: none;
