@@ -134,10 +134,25 @@ function Home() {
                 </div>
                 <div style={{ width: "80px" }} />
                 <div className="right">
-                    right
+                    <div className="image__container">
+                        <img src={require('../../assets/image3.jpg')} alt="" />
+                        <div className="text__in__container">
+                            <span>LOVE</span>
+                            <span>OF</span>
+                            <span>MIDTERM</span>
+                        </div>
+                    </div>
+                    <div className="text__container">
+                        <div className="inner__container">
+                            <p className="title">LOVE OF MIDTERM</p>
+                            <p className="text">
+                                Take an exam from whoever you want to chat. Pass the exam, Start chatting from the topics which are from the person.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
+            <div style={{ height: "400px" }} />
         </div>
     )
 }
