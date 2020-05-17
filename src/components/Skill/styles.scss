@@ -1,0 +1,24 @@
+.Skill {
+    height: 450px;
+    display: flex;
+    .left {
+        width: 35%;
+        .title {
+            margin-top: 40px;
+            margin-left: 60px;
+            font-size: 72px;
+            position: relative;
+            top: 6px;
+            right: 9px;
+            font-family: 'Playfair Display', serif;
+        }
+    }
+    .right {
+        width:65%;
+        p {
+            margin-top: 100px;
+            line-height: 22px;
+            margin-left: 50px;
+        }
+    }
+}

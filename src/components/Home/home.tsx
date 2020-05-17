@@ -2,9 +2,20 @@ import React from 'react'
 import './styles.scss'
 //@ts-ignore
 import Fade from 'react-reveal/Fade';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Skill from '../Skill/skill';
 
 
 function Home() {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
     return (
         <div className="Home">
             <div className="top">
@@ -152,6 +163,32 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <div style={{ height: "280px" }} />
+            <div className="my__name">
+                <div className="short_line"></div>
+                <span className="name">
+                    My skills
+                </span>
+            </div>
+            <div style={{ height: "40px" }} />
+            <p className="middle__big__text">
+                If I'm not good at,
+            </p>
+            <p className="middle__big__text">
+                That is not my skill
+            </p>
+            <div style={{ height: "100px" }} />
+            <div className={"slider__container"}>
+                <Slider {...settings}>
+                    <div>
+                        <Skill title={"Swift"} contents={"Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. for iOS, iPadOS, macOS, watchOS, tvOS, Linux, and z/OS. Swift is designed to work with Apple's Cocoa and Cocoa Touch frameworks and the large body of existing Objective-C code written for Apple products. It is built with the open source LLVM compiler framework and has been included in Xcode since version 6, released in 2014. On Apple platforms,[11] it uses the Objective-C runtime library which allows C, Objective-C, C++ and Swift code to run within one program."} />
+                    </div>
+                    <div>
+                        <Skill title={"Javascript"} contents={"JavaScript (/ˈdʒɑːvəˌskrɪpt/),[6] often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[7] JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions."} />
+                    </div>
+                </Slider>
+            </div>
+
             <div style={{ height: "400px" }} />
         </div>
     )
