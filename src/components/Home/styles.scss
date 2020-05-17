@@ -197,6 +197,11 @@
 
     .slider__container {
         width: 76%;
+        div {
+            &:hover {
+                outline: none;
+            }
+        }
     }
 
 
