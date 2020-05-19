@@ -14,7 +14,8 @@ function Home() {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: true
     };
     return (
         <div className="Home">
@@ -184,7 +185,58 @@ function Home() {
                         <Skill title={"Swift"} contents={"Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. for iOS, iPadOS, macOS, watchOS, tvOS, Linux, and z/OS. Swift is designed to work with Apple's Cocoa and Cocoa Touch frameworks and the large body of existing Objective-C code written for Apple products. It is built with the open source LLVM compiler framework and has been included in Xcode since version 6, released in 2014. On Apple platforms,[11] it uses the Objective-C runtime library which allows C, Objective-C, C++ and Swift code to run within one program."} />
                     </div>
                     <div>
-                        <Skill title={"Javascript"} contents={"JavaScript (/ˈdʒɑːvəˌskrɪpt/),[6] often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[7] JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions."} />
+                        <Skill title={"Javascript"} contents={"JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning Area."} />
+
+                    </div>
+                    <div>
+                        <Skill title={"React"} contents={`React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.`} />
+                    </div>
+                    <div>
+                        <Skill title={"Node.js"} contents={`Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. Consequently, Node.js represents a "JavaScript everywhere" paradigm, unifying web-application development around a single programming language, rather than different languages for server- and client-side scripts.`} />
+                    </div>
+                    <div>
+                        <Skill title={"Typescript"} contents={"TypeScript is an open-source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language. TypeScript is designed for development of large applications and transcompiles to JavaScript. As TypeScript is a superset of JavaScript, existing JavaScript programs are also valid TypeScript programs."} />
+                    </div>
+                    <div>
+                        <Skill title={"Express"} contents={`This is over simplifying it, but Express.js is to Node.js what Ruby on Rails or Sinatra is to Ruby.
+
+Express 3.x is a light-weight web application framework to help organize your web application into an MVC architecture on the server side. You can use a variety of choices for your templating language (like EJS, Jade, and Dust.js).
+
+You can then use a database like MongoDB with Mongoose (for modeling) to provide a backend for your Node.js application. Express.js basically helps you manage everything, from routes, to handling requests and views.`} />
+                    </div>
+                    <div>
+                        <Skill title={"Graphql"} contents={`GraphQL is a query language for your API, and a server-side runtime for executing queries by using a type system you define for your data. GraphQL isn't tied to any specific database or storage engine and is instead backed by your existing code and data.`} />
+                    </div>
+                    <div>
+                        <Skill title={"MySql"} contents={"MySQL, the most popular Open Source SQL database management system, is developed, distributed, and supported by Oracle Corporation."} />
+                    </div>
+                    <div>
+                        <Skill title={"Mongodb"} contents={"MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era. No database makes you more productive."} />
+                    </div>
+                    <div>
+                        <Skill title={"Firebase"} contents={"Firebase is a Backend-as-a-Service — BaaS — that started as a YC11 startup and grew up into a next-generation app-development platform on Google Cloud Platform."} />
+                    </div>
+                    <div>
+                        <Skill title={"Java"} contents={`Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible. It is intended to let application developers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation. Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture. The syntax of Java is similar to C and C++, but it has fewer low-level facilities than either of them. As of 2019, Java was one of the most popular programming languages in use according to GitHub, particularly for client-server web applications, with a reported 9 million developers.`} />
+                    </div>
+                    <div>
+                        <Skill title={"Python"} contents={`Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together.`} />
+                    </div>
+                    <div>
+                        <Skill title={"Linux"} contents={`From smartphones to cars, supercomputers and home appliances, home desktops to enterprise servers, the Linux operating system is everywhere.
+
+Linux has been around since the mid-1990s and has since reached a user-base that spans the globe. Linux is actually everywhere: It?s in your phones, your thermostats, in your cars, refrigerators, Roku devices, and televisions. It also runs most of the Internet, all of the world’s top 500 supercomputers, and the world’s stock exchanges.
+
+But besides being the platform of choice to run desktops, servers, and embedded systems across the globe, Linux is one of the most reliable, secure and worry-free operating systems available.`} />
+                    </div>
+                    <div>
+                        <Skill title={"Nginx"} contents={`NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. It started out as a web server designed for maximum performance and stability. In addition to its HTTP server capabilities, NGINX can also function as a proxy server for email (IMAP, POP3, and SMTP) and a reverse proxy and load balancer for HTTP, TCP, and UDP servers.`} />
+                    </div>
+                    <div>
+                        <Skill title={"Docker"} contents={`Docker is a set of platform as a service (PaaS) products that uses OS-level virtualization to deliver software in packages called containers.[6] Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.[7] All containers are run by a single operating system kernel and therefore use fewer resources than virtual machines.`} />
+                    </div>
+                    <div>
+                        <Skill title={"Jenkins"} contents={`Jenkins is an open source automation tool written in Java with plugins built for Continuous Integration purpose. Jenkins is used to build and test your software projects continuously making it easier for developers to integrate changes to the project, and making it easier for users to obtain a fresh build. It also allows you to continuously deliver your software by integrating with a large number of testing and deployment technologies.`} />
                     </div>
                 </Slider>
             </div>
