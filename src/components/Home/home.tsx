@@ -242,6 +242,43 @@ But besides being the platform of choice to run desktops, servers, and embedded 
             </div>
 
             <div style={{ height: "100px" }} />
+
+            <div className="school">
+                <div className="my__name">
+                    <div className="short_line"></div>
+                    <span className="name">
+                        University
+                </span>
+                </div>
+                <div style={{ height: "40px" }} />
+                <p className="middle__big__text">
+                    Small,
+                </p>
+                <p className="middle__big__text">
+                    but strong
+                </p>
+                <div style={{ height: "100px" }} />
+                <div className="container">
+                    <div className="left">
+                        <div className="text__container">
+                            <p>
+                                Korea Bible University is a university located in Nowon-Gu Seoul si. Computer software major’s history is not long however produced a lot of great developers so I’m very proud of my university
+                            </p>
+                        </div>
+                    </div>
+                    <div style={{ width: "40px" }} />
+                    <div className="right">
+                        <img src={require('../../assets/kbu.jpg')} alt="" />
+                        <div className="text__container">
+                            <p>KOREA</p>
+                            <p>BIBLE</p>
+                            <p>University</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style={{ height: "200px" }} />
             <div className="copyright">
                 <div className="text__container">
                     <p>

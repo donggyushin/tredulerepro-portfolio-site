@@ -214,6 +214,66 @@ div:focus {
         }
     }
 
+    .school {
+        width: 76%;
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .left {
+                width: 35%;
+                height: 300px;
+                border-top: 1px solid gainsboro;
+                border-left: 1px solid gainsboro;
+                border-bottom: 1px solid gainsboro;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .text__container {
+                    width: 80%;
+                    height: 80%;
+                    p {
+                        font-size: 13px;
+                            font-weight: 600;
+                            font-family: 'Roboto', sans-serif;
+                            
+                            line-height: 20px;
+                    }
+                }
+                
+            }
+            .right {
+                width: 55%;
+                position: relative;
+                img {
+                    width: 100%;
+                }
+
+                .text__container {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    p {
+                        position: relative;
+                        top: 35px;
+                        font-size: 28px;
+                        font-weight: 600;
+                        font-family: 'Roboto', sans-serif;
+                        letter-spacing: 9px;
+                        line-height: 40px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
     .copyright {
         width: 78%;
         border-top: 1px solid gainsboro;
