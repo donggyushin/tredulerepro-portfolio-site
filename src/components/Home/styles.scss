@@ -202,7 +202,7 @@ div:focus {
     .slider__container {
         width: 76%;
         .slick-prev:before, .slick-next:before {
-            color:black;
+            color:black !important;
         }
         div {
             &:hover {
