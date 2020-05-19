@@ -82,9 +82,10 @@ div:focus {
         
         width: 77%;
         display: flex;
-
+        justify-content: center;
         .left {
             width: 100%;
+            max-width: 600px;
             .top {
                 display: flex;
                 flex-direction: column;
@@ -94,6 +95,7 @@ div:focus {
                 cursor: pointer;
                 display: flex;
                 flex-direction: column;
+                
                 .image__container {
                     cursor: pointer;
                     position: relative;
@@ -147,6 +149,7 @@ div:focus {
         }
         .right {
             width: 100%;
+            max-width: 600px;
             display: flex;
             flex-direction: column;
             .image__container {
@@ -216,6 +219,7 @@ div:focus {
 
     .school {
         width: 76%;
+        max-width: 1400px;
         .container {
             display: flex;
             justify-content: center;
@@ -233,8 +237,8 @@ div:focus {
                     width: 80%;
                     height: 80%;
                     p {
-                        font-size: 13px;
-                            font-weight: 600;
+                        font-size: 15px;
+                            font-weight: 500;
                             font-family: 'Roboto', sans-serif;
                             
                             line-height: 20px;
