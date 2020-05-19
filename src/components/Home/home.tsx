@@ -125,7 +125,7 @@ function Home() {
                     <div style={{
                         height: "40px"
                     }} />
-                    <div className="image__card__container">
+                    <div className="image__card__container" onClick={goToBibleBot}>
                         <div className="image__container">
                             <img id={"image1"} src={require('../../assets/image2.jpg')} />
                             <div className="text__container2">
@@ -146,7 +146,7 @@ function Home() {
                 </div>
                 <div style={{ width: "80px" }} />
                 <div className="right">
-                    <div className="image__container">
+                    <div className="image__container" onClick={goToAppStore}>
                         <img src={require('../../assets/image3.jpg')} alt="" />
                         <div className="text__in__container">
                             <span>LOVE</span>
@@ -154,7 +154,7 @@ function Home() {
                             <span>MIDTERM</span>
                         </div>
                     </div>
-                    <div className="text__container">
+                    <div className="text__container" onClick={goToAppStore}>
                         <div className="inner__container">
                             <p className="title">LOVE OF MIDTERM</p>
                             <p className="text">
@@ -241,9 +241,43 @@ But besides being the platform of choice to run desktops, servers, and embedded 
                 </Slider>
             </div>
 
-            <div style={{ height: "400px" }} />
+            <div style={{ height: "100px" }} />
+            <div className="copyright">
+                <div className="text__container">
+                    <p>
+                        Copyright © 2020 · Shin donggyu Limited
+                    </p>
+                </div>
+                <div className="sns__container">
+                    <img onClick={goToInstagram} src={require('../../assets/instagram.png')} alt="" />
+                    <img onClick={goToYoutube} src={require('../../assets/youtube.png')} alt="" />
+                    <img onClick={goToMedium} src={require('../../assets/blog.png')} alt="" />
+                </div>
+            </div>
         </div>
     )
+
+    function goToYoutube() {
+        window.open('https://www.youtube.com/channel/UCEu31Np3_ocJ0JEtuoSbXIA?view_as=subscriber')
+    }
+
+    function goToMedium() {
+        window.open('https://medium.com/@donggyu9410')
+    }
+
+    function goToInstagram() {
+
+        window.open('https://www.instagram.com/donggyu_00/?hl=ko')
+    }
+
+    function goToAppStore() {
+        window.open('https://apps.apple.com/us/app/%EC%A4%91%EA%B0%84%EC%9D%98-%EC%97%B0%EC%95%A0/id1509864243')
+    }
+
+    function goToBibleBot() {
+        window.open('https://kbucard.com/')
+    }
+
 }
 
 export default Home
