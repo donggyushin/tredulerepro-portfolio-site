@@ -354,6 +354,7 @@ div:focus {
             .title {
                 margin-top: 30px;
                 margin-left: 40px;
+                margin-right: 40px;
                 margin-bottom: 30px;
                 p {
                     font-size: 27px;
@@ -368,6 +369,102 @@ div:focus {
                     color: gray;
                     line-height: 20px;
                 }
+            }
+        }
+    }
+
+    .introduce__youtube {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 170px;
+        .title {
+            font-size: 72px;
+            font-family: 'Playfair Display', serif;
+        }
+        .youtube__popular__post__container {
+            border-radius: 5px;
+            border: 1px solid gainsboro;
+            margin-top: 70px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            width: 680px;
+        }
+
+        .me__container {
+            display: flex;
+            margin-top: 20px;
+            margin-left: 25px;
+            .profile__image__container {
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    margin-right: 15px;
+                }
+            }
+
+            .my__info__container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .name__container {
+                    p {
+                        font-size: small;
+                        color: gray;
+                        font-weight: 100;
+                    }
+                }
+                .date__container {
+                    margin-top: 10px;
+                    display: flex;
+                    color: gray;
+                    .date {
+                        font-size: small;
+                        
+                    }
+                    span {
+                        margin-right: 5px;
+                        margin-left: 5px;
+                    }
+                    .read {
+                        font-size: small;
+                    }
+                }
+            }
+
+        }
+
+        .post__image__container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+            img {
+                width: 90%;
+                border-radius: 2px;
+            }
+        }
+
+        .title {
+            margin-top: 30px;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-bottom: 30px;
+            p {
+                font-size: 27px;
+            }
+        }
+
+        .contents {
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-bottom: 30px;
+            p {
+                font-size: 15px;
+                color: gray;
+                line-height: 20px;
             }
         }
     }

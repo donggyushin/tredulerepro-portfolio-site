@@ -137,7 +137,7 @@ function Home() {
                             <div className="inner__container">
                                 <p className="title">BIBLE BOT</p>
                                 <p className="text">
-                                    See attendance progress, mileages, schedules, menus, maps, notices. You can use your QRcode to verify yourself at everywhere in Korean Bible University
+                                    See attendance progress, mileages, schedules, menus, maps, notices. You can use your QRcode to verify yourself at everywhere in Korean Bible University (test account: ilar9410 / bible7890)
                                     </p>
                             </div>
                         </div>
@@ -329,6 +329,45 @@ But besides being the platform of choice to run desktops, servers, and embedded 
                     </div>
                 </div>
             </div>
+            <div className="introduce__youtube">
+                <div className="title">
+                    Youtube
+                </div>
+                <div onClick={goToYoutube2} className="youtube__popular__post__container">
+                    <div className="me__container">
+                        <div className="profile__image__container">
+                            <img src="https://miro.medium.com/fit/c/80/80/2*iMvVnOFcILbuQCC-f_dOOA.jpeg" alt="medium donggyu profile image" />
+                        </div>
+                        <div className="my__info__container">
+                            <div className="name__container">
+                                <p>treduler</p>
+                            </div>
+                            <div className="date__container">
+                                <p className="date">
+                                    Jun 6, 2019
+                                </p>
+                                <span>·</span>
+                                <p className="read">
+                                    1:48 mins
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="post__image__container">
+                        <img src={require('../../assets/youtubeImage1.png')} alt="donggyu youtube post image" />
+                    </div>
+                    <div className="title">
+                        <p>
+                            Web application made with python openCV module
+                        </p>
+                    </div>
+                    <div className="contents">
+                        <p>
+                            We made a web application that fits screwed image and makes a black&white image to a colorful image by using python openCV module and React framework.!
+                        </p>
+                    </div>
+                </div>
+            </div>
             <div style={{ height: "300px" }} />
             <div className="copyright">
                 <div className="text__container">
@@ -347,6 +386,10 @@ But besides being the platform of choice to run desktops, servers, and embedded 
 
     function goToYoutube() {
         window.open('https://www.youtube.com/channel/UCEu31Np3_ocJ0JEtuoSbXIA?view_as=subscriber')
+    }
+
+    function goToYoutube2() {
+        window.open('https://www.youtube.com/watch?v=q41tq7psUe8')
     }
 
     function goToMedium() {
