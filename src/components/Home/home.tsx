@@ -241,7 +241,7 @@ But besides being the platform of choice to run desktops, servers, and embedded 
                 </Slider>
             </div>
 
-            <div style={{ height: "100px" }} />
+            <div style={{ height: "280px" }} />
 
             <div className="school">
                 <div className="my__name">
@@ -278,7 +278,58 @@ But besides being the platform of choice to run desktops, servers, and embedded 
                 </div>
             </div>
 
-            <div style={{ height: "200px" }} />
+            <div style={{ height: "350px" }} />
+            <div className="my__name">
+                <div className="short_line"></div>
+                <span className="name">
+                    Other sites
+                </span>
+            </div>
+            <div style={{ height: "40px" }} />
+            <p className="middle__big__text">
+                You got more
+            </p>
+            <p className="middle__big__text">
+                interesting to me?
+            </p>
+            <div className="introduce__medium">
+                <div className="title">Blog Medium</div>
+                <div onClick={goToMedium2} className="medium__popular__post__container">
+                    <div className="me__container">
+                        <div className="profile__image__container">
+                            <img src="https://miro.medium.com/fit/c/80/80/2*iMvVnOFcILbuQCC-f_dOOA.jpeg" alt="medium donggyu profile image" />
+                        </div>
+                        <div className="my__info__container">
+                            <div className="name__container">
+                                <p>신동규</p>
+                            </div>
+                            <div className="date__container">
+                                <p className="date">
+                                    Feb 10
+                                </p>
+                                <span>·</span>
+                                <p className="read">
+                                    6min read
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="post__image__container">
+                        <img src="https://miro.medium.com/fit/c/1400/420/0*yUrJTk3A-uol66xV.png" alt="donggyu medium post image" />
+                    </div>
+                    <div className="title">
+                        <p>
+                            Showing different files on the same port in Nginx
+                        </p>
+                    </div>
+                    <div className="contents">
+                        <p>
+                            Let's see how we can show a lot of different static files on the same port in Nginx so that we can deploy a lot of web pages on the one server like a pro.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style={{ height: "300px" }} />
             <div className="copyright">
                 <div className="text__container">
                     <p>
@@ -300,6 +351,10 @@ But besides being the platform of choice to run desktops, servers, and embedded 
 
     function goToMedium() {
         window.open('https://medium.com/@donggyu9410')
+    }
+
+    function goToMedium2() {
+        window.open('https://medium.com/@donggyu9410/nginx-%EA%B0%99%EC%9D%80-%ED%8F%AC%ED%8A%B8%EC%97%90%EC%84%9C-%EA%B0%81%EA%B8%B0-%EB%8B%A4%EB%A5%B8-%ED%8C%8C%EC%9D%BC-%EB%B3%B4%EC%97%AC%EC%A3%BC%EA%B8%B0-d8793b96bbe3')
     }
 
     function goToInstagram() {
