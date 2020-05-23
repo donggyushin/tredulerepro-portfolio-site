@@ -411,6 +411,7 @@ But besides being the platform of choice to run desktops, servers, and embedded 
     function visibleVideo() {
         const video = window.document.getElementById("video") as HTMLVideoElement
         video.style.display = "inline"
+        video.play()
     }
 
     function invisibleVideo() {
