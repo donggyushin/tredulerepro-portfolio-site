@@ -269,8 +269,8 @@ But besides being the platform of choice to run desktops, servers, and embedded 
                     </div>
                     <div style={{ width: "40px" }} />
                     <div className="right">
-                        <img onClick={goToKBUSite} src={require('../../assets/kbu.jpg')} alt="" />
-                        <div className="text__container">
+                        <img src={require('../../assets/kbu.jpg')} alt="" />
+                        <div onClick={goToKBUSite} className="text__container">
                             <p>KOREA</p>
                             <p>BIBLE</p>
                             <p>University</p>

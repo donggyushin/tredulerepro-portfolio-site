@@ -253,10 +253,11 @@ div:focus {
                 position: relative;
                 img {
                     width: 100%;
-                    cursor: pointer;
+                    
                 }
 
                 .text__container {
+                    cursor: pointer;
                     position: absolute;
                     top: 0;
                     left: 0;
