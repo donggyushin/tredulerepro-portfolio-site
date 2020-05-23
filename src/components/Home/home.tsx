@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Skill from '../Skill/skill';
+import { BsFillEnvelopeFill } from 'react-icons/bs'
 
 
 function Home() {
@@ -268,7 +269,7 @@ But besides being the platform of choice to run desktops, servers, and embedded 
                     </div>
                     <div style={{ width: "40px" }} />
                     <div className="right">
-                        <img src={require('../../assets/kbu.jpg')} alt="" />
+                        <img onClick={goToKBUSite} src={require('../../assets/kbu.jpg')} alt="" />
                         <div className="text__container">
                             <p>KOREA</p>
                             <p>BIBLE</p>
@@ -368,7 +369,23 @@ But besides being the platform of choice to run desktops, servers, and embedded 
                     </div>
                 </div>
             </div>
-            <div style={{ height: "300px" }} />
+            <div style={{ height: "900px" }} />
+            <div className="instagram">
+                <img src={require('../../assets/instagram1.jpg')} alt="insta image 1" className="image1" />
+                <img src={require('../../assets/instagram2.jpg')} alt="insta image 1" className="image2" />
+                <video id={"video"} autoPlay={true} loop={true} className={"video"} src={require('../../assets/instagram3.mp4')}></video>
+                <div className="text__container">
+
+                    <p>Even more</p>
+                    <div className="row">
+                        <p>on</p>
+                        <p>Instagram</p>
+                        <div className="line"></div>
+                        <div onMouseOver={visibleVideo} onMouseLeave={invisibleVideo} onClick={goToInstagram} className="area"></div>
+                    </div>
+                </div>
+
+            </div>
             <div className="copyright">
                 <div className="text__container">
                     <p>
@@ -381,8 +398,34 @@ But besides being the platform of choice to run desktops, servers, and embedded 
                     <img onClick={goToMedium} src={require('../../assets/blog.png')} alt="" />
                 </div>
             </div>
+            <div onClick={composingEmail} className="button__to__send__email__to__me__container">
+                <BsFillEnvelopeFill className={"email__icon"} />
+                <span>S</span>
+                <span>E</span>
+                <span>N</span>
+                <span>D</span>
+            </div>
         </div>
     )
+
+    function visibleVideo() {
+        const video = window.document.getElementById("video") as HTMLVideoElement
+        video.style.display = "inline"
+    }
+
+    function invisibleVideo() {
+        const video = window.document.getElementById("video") as HTMLVideoElement
+        video.style.display = "none"
+
+    }
+
+    function goToKBUSite() {
+        window.open('https://www.bible.ac.kr/')
+    }
+
+    function composingEmail() {
+        window.open('https://mail.google.com/mail/u/0/?view=cm&fs=1&to=donggyu9410@gmail.com&su=SUBJECT&body=BODY&tf=1')
+    }
 
     function goToYoutube() {
         window.open('https://www.youtube.com/channel/UCEu31Np3_ocJ0JEtuoSbXIA?view_as=subscriber')

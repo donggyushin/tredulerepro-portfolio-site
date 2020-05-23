@@ -253,6 +253,7 @@ div:focus {
                 position: relative;
                 img {
                     width: 100%;
+                    cursor: pointer;
                 }
 
                 .text__container {
@@ -468,6 +469,79 @@ div:focus {
             }
         }
     }
+    .instagram {
+        width: 100%;
+        height: 120vh;
+        background-color: black;
+        position: relative;
+        .image1 {
+            position: absolute;
+            top: 0;
+            left: 12%;
+            width: 600px;
+        }
+
+        .image2 {
+            position: absolute;
+            bottom: 0;
+            right: 12%;
+            width: 600px;
+        }
+
+        .text__container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            
+            p {
+                font-size: 150px;
+            }
+            .row {
+                display: flex;
+                position: relative;
+                .line {
+                    width: 620px;
+                    height: 10px;
+                    background-color: white;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+                .area {
+                    width: 630px;
+                    height: 160px;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    cursor: pointer;
+                }
+                p {
+                    
+                    &:nth-child(1) {
+                        margin-right: 60px;
+                    }
+                }
+            }
+
+            
+        }
+
+        .video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            display: none;
+        }
+        
+    }
 
     .copyright {
         width: 78%;
@@ -501,6 +575,24 @@ div:focus {
                     margin-right: 20px;
                 }
             }
+        }
+    }
+
+    .button__to__send__email__to__me__container {
+        position: fixed;
+        right: 0;
+        top: 48%;
+        background-color: black;
+        height: 120px;
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+        .email__icon {
+            margin-top: 15px;
+            margin-bottom: 10px;
         }
     }
 
