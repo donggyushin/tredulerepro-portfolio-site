@@ -143,7 +143,23 @@ function Home() {
                             </div>
                         </div>
                     </div>
-
+                    <div className="second__card">
+                        <div className="image__container">
+                            <img src={require('../../assets/image5.jpg')} alt="" />
+                            <div className="text__container__in__image__container">
+                                <span>TREDULER</span>
+                                <span>TODO</span>
+                            </div>
+                        </div>
+                        <div className="text__container">
+                            <div className="inner__container">
+                                <p className="title">TREDULER TODO</p>
+                                <p className="text">
+                                    The most simple todo application in the world
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div style={{ width: "80px" }} />
                 <div className="right">
@@ -161,6 +177,24 @@ function Home() {
                             <p className="text">
                                 Take an exam from whoever you want to chat. Pass the exam, Start chatting from the topics which are from the person.
                             </p>
+                        </div>
+                    </div>
+                    <div onClick={goToKBUStudy} className="second__card">
+                        <div className="image__container">
+                            <img src={require('../../assets/image4.jpg')} alt="" />
+                            <div className="text__container__in__image__container">
+                                <span>KBU</span>
+                                <span>STUDY</span>
+                                <span>ROOM</span>
+                            </div>
+                        </div>
+                        <div className="text__container">
+                            <div className="inner__container">
+                                <p className="title">KBU STUDY RESERVATION MANAGEMENT SYSTEM</p>
+                                <p className="text">
+                                    Korean Bible University study room reservation management program. Students can make a reservation, enter study room, exit study room by using qrcode from bible bot application.(test account: test/1234)
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -418,6 +452,10 @@ But besides being the platform of choice to run desktops, servers, and embedded 
         const video = window.document.getElementById("video") as HTMLVideoElement
         video.style.display = "none"
 
+    }
+
+    function goToKBUStudy() {
+        window.open('https://study.kbucard.com/')
     }
 
     function goToKBUSite() {
