@@ -777,6 +777,9 @@ div:focus {
         border-top: 1px solid gainsboro;
         height: 250px;
         display: flex;
+        @media screen and (max-width:$break) {
+            flex-direction: column;
+        }
         .text__container {
             width: 70%;
             height: 100%;
