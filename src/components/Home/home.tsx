@@ -101,105 +101,8 @@ function Home() {
             </p>
             </div>
 
-
-            {/* </Fade> */}
-            <div style={{
-                height: "340px"
-            }} />
-            <div className="recent_projects__container">
-                <div className="left">
-                    <div className="top">
-                        <div className="my__name">
-                            <div className="short_line"></div>
-                            <span className="name">
-                                Recent projects
-                            </span>
-                        </div>
-                        <div style={{ height: "40px" }} />
-                        <p className="middle__big__text">
-                            Thoughtfully designed,
-                        </p>
-                        <p className="middle__big__text">
-                            confidently crafted.
-                        </p>
-                    </div>
-                    <div style={{
-                        height: "40px"
-                    }} />
-                    <div className="image__card__container" onClick={goToBibleBot}>
-                        <div className="image__container">
-                            <img id={"image1"} src={require('../../assets/image2.jpg')} />
-                            <div className="text__container2">
-                                <span>BIBLE</span>
-                                <span>BOT</span>
-                            </div>
-                        </div>
-                        <div className="text__container">
-                            <div className="inner__container">
-                                <p className="title">BIBLE BOT</p>
-                                <p className="text">
-                                    See attendance progress, mileages, schedules, menus, maps, notices. You can use your QRcode to verify yourself at everywhere in Korean Bible University (test account: ilar9410 / bible7890)
-                                    </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="second__card">
-                        <div className="image__container">
-                            <img src={require('../../assets/image5.jpg')} alt="" />
-                            <div className="text__container__in__image__container">
-                                <span>TREDULER</span>
-                                <span>TODO</span>
-                            </div>
-                        </div>
-                        <div className="text__container">
-                            <div className="inner__container">
-                                <p className="title">TREDULER TODO</p>
-                                <p className="text">
-                                    The most simple todo application in the world
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style={{ width: "80px" }} />
-                <div className="right">
-                    <div className="image__container" onClick={goToAppStore}>
-                        <img src={require('../../assets/image3.jpg')} alt="" />
-                        <div className="text__in__container">
-                            <span>LOVE</span>
-                            <span>OF</span>
-                            <span>MIDTERM</span>
-                        </div>
-                    </div>
-                    <div className="text__container" onClick={goToAppStore}>
-                        <div className="inner__container">
-                            <p className="title">LOVE OF MIDTERM</p>
-                            <p className="text">
-                                Take an exam from whoever you want to chat. Pass the exam, Start chatting from the topics which are from the person.
-                            </p>
-                        </div>
-                    </div>
-                    <div onClick={goToKBUStudy} className="second__card">
-                        <div className="image__container">
-                            <img src={require('../../assets/image4.jpg')} alt="" />
-                            <div className="text__container__in__image__container">
-                                <span>KBU</span>
-                                <span>STUDY</span>
-                                <span>ROOM</span>
-                            </div>
-                        </div>
-                        <div className="text__container">
-                            <div className="inner__container">
-                                <p className="title">KBU STUDY RESERVATION MANAGEMENT SYSTEM</p>
-                                <p className="text">
-                                    Korean Bible University study room reservation management program. Students can make a reservation, enter study room, exit study room by using qrcode from bible bot application.(test account: test/1234)
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div style={{ height: "280px" }} />
+
             <div className="my__name">
                 <div className="short_line"></div>
                 <span className="name">
@@ -276,6 +179,106 @@ But besides being the platform of choice to run desktops, servers, and embedded 
                 </Slider>
             </div>
 
+
+
+
+            {/* </Fade> */}
+            <div style={{
+                height: "340px"
+            }} />
+            <div className="recent_projects__container">
+                <div className="left">
+                    <div className="top">
+                        <div className="my__name">
+                            <div className="short_line"></div>
+                            <span className="name">
+                                Recent projects
+                            </span>
+                        </div>
+                        <div style={{ height: "40px" }} />
+                        <p className="middle__big__text">
+                            Thoughtfully designed,
+                        </p>
+                        <p className="middle__big__text">
+                            confidently crafted.
+                        </p>
+                    </div>
+                    <div style={{
+                        height: "40px"
+                    }} />
+                    <div className="image__card__container" onClick={goToBibleBot}>
+                        <div className="image__container">
+                            <img id={"image1"} src={require('../../assets/image2.jpg')} />
+                            <div className="text__container2">
+                                <span>BIBLE</span>
+                                <span>BOT</span>
+                            </div>
+                        </div>
+                        <div className="text__container">
+                            <div className="inner__container">
+                                <p className="title">BIBLE BOT</p>
+                                <p className="text">
+                                    See attendance progress, mileages, schedules, menus, maps, notices. You can use your QRcode to verify yourself at everywhere in Korean Bible University (test account: ilar9410 / bible7890)
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="second__card" onClick={goToTredulerTodo}>
+                        <div className="image__container">
+                            <img src={require('../../assets/image5.jpg')} alt="" />
+                            <div className="text__container__in__image__container">
+                                <span>TREDULER</span>
+                                <span>TODO</span>
+                            </div>
+                        </div>
+                        <div className="text__container">
+                            <div className="inner__container">
+                                <p className="title">TREDULER TODO</p>
+                                <p className="text">
+                                    The most simple todo application in the world
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style={{ width: "80px" }} />
+                <div className="right">
+                    <div className="image__container" onClick={goToAppStore}>
+                        <img src={require('../../assets/image3.jpg')} alt="" />
+                        <div className="text__in__container">
+                            <span>LOVE</span>
+                            <span>OF</span>
+                            <span>MIDTERM</span>
+                        </div>
+                    </div>
+                    <div className="text__container" onClick={goToAppStore}>
+                        <div className="inner__container">
+                            <p className="title">LOVE OF MIDTERM</p>
+                            <p className="text">
+                                Take an exam from whoever you want to chat. Pass the exam, Start chatting from the topics which are from the person.
+                            </p>
+                        </div>
+                    </div>
+                    <div onClick={goToKBUStudy} className="second__card">
+                        <div className="image__container">
+                            <img src={require('../../assets/image4.jpg')} alt="" />
+                            <div className="text__container__in__image__container">
+                                <span>KBU</span>
+                                <span>STUDY</span>
+                                <span>ROOM</span>
+                            </div>
+                        </div>
+                        <div className="text__container">
+                            <div className="inner__container">
+                                <p className="title">KBU STUDY RESERVATION MANAGEMENT SYSTEM</p>
+                                <p className="text">
+                                    Korean Bible University study room reservation management program. Students can make a reservation, enter study room, exit study room by using qrcode from bible bot application.(test account: test/1234)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div style={{ height: "280px" }} />
 
             <div className="school">
@@ -452,6 +455,10 @@ But besides being the platform of choice to run desktops, servers, and embedded 
         const video = window.document.getElementById("video") as HTMLVideoElement
         video.style.display = "none"
 
+    }
+
+    function goToTredulerTodo() {
+        window.open('https://apps.apple.com/us/app/treduler-todo/id1514995169')
     }
 
     function goToKBUStudy() {
