@@ -541,8 +541,12 @@ div:focus {
                 display: flex;
                 justify-content: center;
                 margin-top: 25px;
+                @media screen and (max-width:$break) {
+                    height: 150px;
+                }
                 img {
                     width: 100%;
+                    object-fit: contain;
                 }
             }
             .title {
@@ -641,6 +645,9 @@ div:focus {
             display: flex;
             justify-content: center;
             margin-top: 25px;
+            @media screen and (max-width:$break) {
+                height: 217.91px;
+            }
             img {
                 width: 90%;
                 border-radius: 2px;
