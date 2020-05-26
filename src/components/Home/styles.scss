@@ -1,8 +1,14 @@
+$break: 720px;
+
 div:focus {
     outline: none !important;
 }
 
 .Home {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .big__image {
         width: 100%;
@@ -13,9 +19,6 @@ div:focus {
     }
 
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     .top {
         display: flex;
         width: 76%;
@@ -43,12 +46,17 @@ div:focus {
         display: flex;
         align-items: center;
 
+        @media screen and (max-width:$break) {
+            padding-left: 20px;
+        }
+
         .name {
             margin-left: 10px;
             font-family: 'DM Mono', monospace;
             font-family: 'Playfair Display', serif;
             letter-spacing: 2px;
             font-size: 14px;
+            
         }
     }
 
@@ -60,7 +68,21 @@ div:focus {
         font-size: 60px;
         p {
             line-height: 80px;
+
+            @media screen and (max-width: $break) {
+                font-size: 18px;
+                line-height: 30px;
+              }
+
+
         }
+    }
+
+    .under__introduce__me {
+        height: 300px;
+        @media screen and (max-width: $break) {
+            height: 70px;
+          }
     }
 
     .middle__big__text {
@@ -69,30 +91,53 @@ div:focus {
         font-family: 'DM Mono', monospace;
         font-family: 'Noto Sans JP', sans-serif;
         font-family: 'Playfair Display', serif;
+        @media screen and (max-width:$break) {
+            padding-left: 20px;
+        }
     }
 
     .plane__text__container {
         padding-left: 20%;
+        @media screen and (max-width: $break) {
+            padding-left: 20px;
+          }
         .plane__text {
             width: 55%;
-        font-size: 22px;
-        line-height: 34px;
-        font-weight: 200;
-        font-family: 'Open Sans', sans-serif;
-        display: inline-block;
-        overflow-wrap: break-word;
-        display: block;
-        hyphens: none;
-        -webkit-hyphens: none;
-        -moz-hyphens: none;
+            font-size: 22px;
+            line-height: 34px;
+            font-weight: 200;
+            font-family: 'Open Sans', sans-serif;
+            display: inline-block;
+            overflow-wrap: break-word;
+            display: block;
+            hyphens: none;
+            -webkit-hyphens: none;
+            -moz-hyphens: none;
+            @media screen and (max-width: $break) {
+                width: 95%;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .under__skills {
+        height: 100px;
+        @media screen and (max-width: $break) {
+            height: 0px;
         }
     }
 
     .recent_projects__container {
         
         width: 77%;
+
         display: flex;
         justify-content: center;
+        @media screen and (max-width:$break) {
+            flex-direction: column;
+            width: 100%;
+        }
         .left {
             width: 100%;
             max-width: 600px;
@@ -160,8 +205,15 @@ div:focus {
                 margin-top: 70px;
                 cursor: pointer;
 
+                @media screen and ( max-width:$break) {
+                    margin-bottom: 70px;
+                }
+
                 .image__container {
                     position: relative;
+                    img {
+                        width: 100%;
+                    }
                     .text__container__in__image__container {
                         position: absolute;
                         width: 100%;
@@ -187,6 +239,9 @@ div:focus {
                     width: 99.6%;
                     border: 1px solid gainsboro;
                     height: 160px;
+                    @media screen and (max-width:$break) {
+                        height: 120px;
+                    }
                     margin-top: -5px;
                     display: flex;
                     justify-content: center;
@@ -265,6 +320,9 @@ div:focus {
 
             .second__card {
                 margin-top: 200px;
+                @media screen and (max-width:$break) {
+                    margin-top: 70px;
+                }
 
                 .image__container {
                     position: relative;
@@ -290,6 +348,9 @@ div:focus {
                 }
 
                 .text__container {
+                    @media screen and (max-width:$break) {
+                        height: 215px;
+                    }
                     .inner__container {
                         width: 87%;
                         height: 100%;
@@ -323,10 +384,19 @@ div:focus {
     .school {
         width: 76%;
         max-width: 1400px;
+        // @media screen and (max-width:&break) {
+        //     width: 100%;
+        // }
+        @media screen and (max-width:$break) {
+            width: 100%;
+        }
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
+            @media screen and (max-width:$break) {
+                flex-direction: column-reverse;
+            }
             .left {
                 width: 35%;
                 height: 300px;
@@ -336,6 +406,11 @@ div:focus {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                @media screen and (max-width:$break) {
+                    width: 100%;
+                    height: 150px;
+                    border-top: 0;
+                }
                 .text__container {
                     width: 80%;
                     height: 80%;
@@ -354,6 +429,9 @@ div:focus {
             .right {
                 width: 55%;
                 position: relative;
+                @media screen and (max-width:$break) {
+                    width: 100%;
+                }
                 img {
                     width: 100%;
                     
@@ -392,13 +470,22 @@ div:focus {
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media screen and (max-width:$break) {
+            width: 100%;
+        }
         .title {
             margin-top: 150px;
             font-size: 72px;
             font-family: 'Playfair Display', serif;
+            @media screen and (max-width:$break) {
+                font-size: 44px;
+            }
         }
         .medium__popular__post__container {
             width: 680px;
+            @media screen and (max-width:$break) {
+                width: 100%;
+            }
             border-radius: 5px;
             border: 1px solid gainsboro;
             margin-top: 70px;
@@ -488,6 +575,9 @@ div:focus {
         margin-top: 170px;
         .title {
             font-size: 72px;
+            @media screen and (max-width:$break) {
+                font-size: 44px;
+            }
             font-family: 'Playfair Display', serif;
         }
         .youtube__popular__post__container {
@@ -497,6 +587,9 @@ div:focus {
             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
             cursor: pointer;
             width: 680px;
+            @media screen and (max-width:$break) {
+                width: 100%;
+            }
         }
 
         .me__container {
@@ -575,6 +668,12 @@ div:focus {
             }
         }
     }
+    .above__instagram {
+        height: 900px;
+        @media screen and (max-width:$break) {
+            height: 200px;
+        }
+    }
     .instagram {
         width: 100%;
         height: 120vh;
@@ -585,6 +684,9 @@ div:focus {
             top: 0;
             left: 12%;
             width: 600px;
+            @media screen and (max-width:$break) {
+                width: 300px;
+            }
         }
 
         .image2 {
@@ -592,6 +694,9 @@ div:focus {
             bottom: 0;
             right: 12%;
             width: 600px;
+            @media screen and (max-width:$break) {
+                width: 300px;
+            }
         }
 
         .text__container {
@@ -608,6 +713,9 @@ div:focus {
             
             p {
                 font-size: 150px;
+                @media screen and (max-width:$break){
+                    font-size: 50px;
+                }
             }
             .row {
                 display: flex;
@@ -619,6 +727,10 @@ div:focus {
                     position: absolute;
                     right: 0;
                     bottom: 0;
+                    @media screen and (max-width:$break) {
+                        width: 208px;
+                        height: 4px;
+                    }
                 }
                 .area {
                     width: 630px;
@@ -632,6 +744,9 @@ div:focus {
                     
                     &:nth-child(1) {
                         margin-right: 60px;
+                        @media screen and (max-width:$break) {
+                            margin-right: 10px;
+                        }
                     }
                 }
             }
@@ -700,6 +815,14 @@ div:focus {
             margin-top: 15px;
             margin-bottom: 10px;
         }
+
+        @media screen and (max-width: $break) {
+        
+            top: 0;
+            
+        }
+
+
     }
 
 

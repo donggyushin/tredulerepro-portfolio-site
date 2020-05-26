@@ -52,9 +52,7 @@ function Home() {
                 </p>
                 </Fade>
             </div>
-            <div style={{
-                height: "300px"
-            }} />
+            <div className="under__introduce__me" />
             {/* <Fade bottom cascade> */}
             <div className="big__image">
                 <img src={require('../../assets/image1.jpg')} alt="" />
@@ -116,7 +114,7 @@ function Home() {
             <p className="middle__big__text">
                 That is not my skill
             </p>
-            <div style={{ height: "100px" }} />
+            <div className={"under__skills"} />
             <div className={"slider__container"}>
                 <Slider {...settings}>
                     <div>
@@ -406,7 +404,7 @@ But besides being the platform of choice to run desktops, servers, and embedded 
                     </div>
                 </div>
             </div>
-            <div style={{ height: "900px" }} />
+            <div className={"above__instagram"} />
             <div className="instagram">
                 <img src={require('../../assets/instagram1.jpg')} alt="insta image 1" className="image1" />
                 <img src={require('../../assets/instagram2.jpg')} alt="insta image 1" className="image2" />

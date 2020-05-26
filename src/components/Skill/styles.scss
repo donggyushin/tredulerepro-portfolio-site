@@ -1,9 +1,24 @@
+$break: 720px;
+
 .Skill {
     height: 450px;
     display: flex;
+    @media screen and (max-width: $break) {
+        flex-direction: column;
+    }
     .left {
         width: 35%;
+        @media screen and (max-width:$break) {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
         .title {
+            @media screen and (max-width: $break) {
+                width: 100%;
+                margin-left: 0;
+                text-align: center;
+            }
             margin-top: 40px;
             margin-left: 60px;
             font-size: 72px;
@@ -15,10 +30,17 @@
     }
     .right {
         width:65%;
+        @media screen and (max-width:$break) {
+            width: 100%;
+            
+        }
         p {
             margin-top: 100px;
             line-height: 22px;
             margin-left: 50px;
+            @media screen and (max-width:$break) {
+                margin-left: 0;
+            }
         }
     }
 }
