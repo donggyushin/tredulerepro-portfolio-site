@@ -404,6 +404,45 @@ But besides being the platform of choice to run desktops, servers, and embedded 
                     </div>
                 </div>
             </div>
+            <div className="introduce__youtube">
+                <div className="title">
+                    Github
+                </div>
+                <div onClick={goToGitHub} className="youtube__popular__post__container">
+                    <div className="me__container">
+                        <div className="profile__image__container">
+                            <img src="https://avatars1.githubusercontent.com/u/34573243?s=460&u=f4ac4eb7988c7d89fcfa84738baebcbe7e1fcb61&v=4" alt="medium donggyu profile image" />
+                        </div>
+                        <div className="my__info__container">
+                            <div className="name__container">
+                                <p>donggyu</p>
+                            </div>
+                            <div className="date__container">
+                                <p className="date">
+                                    donggyu shin
+                                </p>
+                                <span>·</span>
+                                <p className="read">
+                                    2020.05.28
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="post__image__container">
+                        <img src={require('../../assets/githubimage.png')} alt="donggyu youtube post image" />
+                    </div>
+                    <div className="title">
+                        <p>
+                            My Github
+                        </p>
+                    </div>
+                    <div className="contents">
+                        <p>
+                            You can check my github here!!!
+                        </p>
+                    </div>
+                </div>
+            </div>
             <div className={"above__instagram"} />
             <div className="instagram">
                 <img src={require('../../assets/instagram1.jpg')} alt="insta image 1" className="image1" />
@@ -431,6 +470,7 @@ But besides being the platform of choice to run desktops, servers, and embedded 
                     <img onClick={goToInstagram} src={require('../../assets/instagram.png')} alt="" />
                     <img onClick={goToYoutube} src={require('../../assets/youtube.png')} alt="" />
                     <img onClick={goToMedium} src={require('../../assets/blog.png')} alt="" />
+                    <img onClick={goToGitHub} src={require('../../assets/github.png')} alt="" />
                 </div>
             </div>
             <div onClick={composingEmail} className="button__to__send__email__to__me__container">
@@ -443,6 +483,8 @@ But besides being the platform of choice to run desktops, servers, and embedded 
         </div>
     )
 
+
+
     function visibleVideo() {
         const video = window.document.getElementById("video") as HTMLVideoElement
         video.style.display = "inline"
@@ -453,6 +495,10 @@ But besides being the platform of choice to run desktops, servers, and embedded 
         const video = window.document.getElementById("video") as HTMLVideoElement
         video.style.display = "none"
 
+    }
+
+    function goToGitHub() {
+        window.open('https://github.com/donggyushin')
     }
 
     function goToTredulerTodo() {
