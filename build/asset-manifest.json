@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.f6ada728.chunk.css",
-    "main.js": "/static/js/main.bd505861.chunk.js",
-    "main.js.map": "/static/js/main.bd505861.chunk.js.map",
+    "main.css": "/static/css/main.e3765e40.chunk.css",
+    "main.js": "/static/js/main.3f707843.chunk.js",
+    "main.js.map": "/static/js/main.3f707843.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8ae94b8e.js",
     "runtime-main.js.map": "/static/js/runtime-main.8ae94b8e.js.map",
     "static/css/2.89fcc9a3.chunk.css": "/static/css/2.89fcc9a3.chunk.css",
-    "static/js/2.45da45ea.chunk.js": "/static/js/2.45da45ea.chunk.js",
-    "static/js/2.45da45ea.chunk.js.map": "/static/js/2.45da45ea.chunk.js.map",
+    "static/js/2.f797372f.chunk.js": "/static/js/2.f797372f.chunk.js",
+    "static/js/2.f797372f.chunk.js.map": "/static/js/2.f797372f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.be10a65ca4a90f944607336d7f5515cf.js": "/precache-manifest.be10a65ca4a90f944607336d7f5515cf.js",
+    "precache-manifest.10502d28c057406b6306e4aab44d705c.js": "/precache-manifest.10502d28c057406b6306e4aab44d705c.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.89fcc9a3.chunk.css.map": "/static/css/2.89fcc9a3.chunk.css.map",
-    "static/css/main.f6ada728.chunk.css.map": "/static/css/main.f6ada728.chunk.css.map",
-    "static/js/2.45da45ea.chunk.js.LICENSE.txt": "/static/js/2.45da45ea.chunk.js.LICENSE.txt",
+    "static/css/main.e3765e40.chunk.css.map": "/static/css/main.e3765e40.chunk.css.map",
+    "static/js/2.f797372f.chunk.js.LICENSE.txt": "/static/js/2.f797372f.chunk.js.LICENSE.txt",
     "static/media/githubimage.png": "/static/media/githubimage.45f04661.png",
     "static/media/image1.jpg": "/static/media/image1.5217b819.jpg",
     "static/media/image2.jpg": "/static/media/image2.a8fde693.jpg",
@@ -24,14 +24,16 @@
     "static/media/instagram2.jpg": "/static/media/instagram2.bd8d593f.jpg",
     "static/media/instagram3.mp4": "/static/media/instagram3.df4bcc74.mp4",
     "static/media/kbu.jpg": "/static/media/kbu.36f80f5f.jpg",
+    "static/media/lectureImage1.jpg": "/static/media/lectureImage1.40ae7ead.jpg",
+    "static/media/lectureImage2.png": "/static/media/lectureImage2.dbf4c5fe.png",
     "static/media/slick-theme.css": "/static/media/slick.f97e3bbf.svg",
     "static/media/youtubeImage1.png": "/static/media/youtubeImage1.45c958a1.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8ae94b8e.js",
     "static/css/2.89fcc9a3.chunk.css",
-    "static/js/2.45da45ea.chunk.js",
-    "static/css/main.f6ada728.chunk.css",
-    "static/js/main.bd505861.chunk.js"
+    "static/js/2.f797372f.chunk.js",
+    "static/css/main.e3765e40.chunk.css",
+    "static/js/main.3f707843.chunk.js"
   ]
 }
