@@ -443,6 +443,66 @@ But besides being the platform of choice to run desktops, servers, and embedded 
                     </div>
                 </div>
             </div>
+            <div className="margin__above__youtube__lectures"></div>
+            <div className="my__name">
+                <div className="short_line"></div>
+                <span className="name">
+                    Lectures
+                </span>
+            </div>
+            <div style={{ height: "40px" }} />
+            <p className="middle__big__text">
+                I teaches
+            </p>
+            <p className="middle__big__text">
+                programming on online
+            </p>
+            <div className="lectures__container">
+                <div onClick={goToSwiftBasicTutorial} className="card">
+                    <img src={require('../../assets/lectureImage1.jpg')} alt="" />
+                    <div className="black__view">
+                        <p className="white__text">
+                            IOS
+                        </p>
+                        <p className="white__text">
+                            development
+                        </p>
+                        <p className="white__text">
+                            basic
+                        </p>
+                        <p className="white__text">
+                            course
+                        </p>
+                    </div>
+                    <div className="text__container">
+                        <p className="description">
+                            Let's learn how to make an ios application without storyboard!
+                        </p>
+                        <p className="description">
+                            I'm sure it will really helpful for you.
+                        </p>
+                    </div>
+                </div>
+                <div onClick={goToPokemonTutorial} className="card">
+                    <img src={require('../../assets/lectureImage2.png')} alt="" />
+                    <div className="black__view">
+                        <p className="white__text">
+                            Pokemon
+                        </p>
+                        <p className="white__text">
+                            Book
+                        </p>
+                    </div>
+                    <div className="text__container">
+                        <p className="description">
+                            Let's build pokemon book application.
+                        </p>
+                        <p className="description">
+                            You can learn how to build an app beatuiful and how to implement awesome animation effect!
+                        </p>
+                    </div>
+                </div>
+            </div>
             <div className={"above__instagram"} />
             <div className="instagram">
                 <img src={require('../../assets/instagram1.jpg')} alt="insta image 1" className="image1" />
@@ -483,7 +543,13 @@ But besides being the platform of choice to run desktops, servers, and embedded 
         </div>
     )
 
+    function goToPokemonTutorial() {
+        window.open('https://www.youtube.com/watch?v=QyA7nqBJ-K8&list=PLG9rdv7aU2N7OxDYrDwkd0KNjLjA3eNjr')
+    }
 
+    function goToSwiftBasicTutorial() {
+        window.open('https://www.youtube.com/watch?v=25Mb_iUJzIA&list=PLG9rdv7aU2N4-nuDqAUtfDlKs4iRJaiu7')
+    }
 
     function visibleVideo() {
         const video = window.document.getElementById("video") as HTMLVideoElement
