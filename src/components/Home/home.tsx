@@ -573,20 +573,31 @@ But besides being the platform of choice to run desktops, servers, and embedded 
                         }}></div>
                         <div className="row">
                             <div className="dot"></div>
-                            <div>Make University application by oz lifting tools</div>
+                            <div className="text">Make University application by oz lifting tools</div>
                         </div>
                         <div className="row">
                             <div className="dot"></div>
-                            <div>MSsql</div>
+                            <div className="text">MSsql</div>
                         </div>
                         <div className="row">
                             <div className="dot"></div>
-                            <div>Make web page with dot net framework</div>
+                            <div className="text">Make web page with dot net framework</div>
                         </div>
-                        <div className="row">
-                            <div className="dot"></div>
-                            <div>Migration worker tools from window form to web form</div>
-                        </div>
+                        {mobileCheck() ? <div>
+                            <div className="row">
+                                <div className="dot"></div>
+                                <div className="text">Migration worker tools from window form</div>
+                            </div>
+                            <div className="row">
+                                <div className="mobile__text">
+                                    to web form
+                                </div>
+                            </div>
+                        </div> : <div className="row">
+                                <div className="dot"></div>
+                                <div className="text">Migration worker tools from window form to web form</div>
+                            </div>}
+
                     </div>
                 </div>
             </div>
@@ -629,6 +640,14 @@ But besides being the platform of choice to run desktops, servers, and embedded 
             </div>
         </div >
     )
+
+    function mobileCheck(): boolean {
+        if (window.innerWidth < 700) {
+            return true
+        } else {
+            return false
+        }
+    }
 
     function goToPythonAlgorithm() {
         window.open('https://www.youtube.com/watch?v=9_b7Ru-WG6I&list=PLG9rdv7aU2N73DKlQ6MZceOtwf1iJxcHJ')
