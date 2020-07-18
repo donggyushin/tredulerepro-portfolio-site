@@ -938,6 +938,7 @@ div:focus {
         @media screen and (max-width: $break) {
             width: 100%;
             padding-left: 80px;
+            margin-top: 50px;
         }
         .item {
             display: flex;
