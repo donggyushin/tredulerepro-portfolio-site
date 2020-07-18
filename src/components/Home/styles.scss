@@ -865,7 +865,7 @@ div:focus {
             border-radius: 10px;
             border: 1px solid gainsboro;
             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-            
+            padding-bottom: 10px;
             width: 600px;
             @media screen and (max-width: $break) {
         
@@ -928,6 +928,42 @@ div:focus {
 
         }
 
+    }
+    
+    .career__container {
+        margin-top: 100px;
+        width: 76%;
+        display: flex;
+        @media screen and (max-width: $break) {
+            width: 100%;
+            padding-left: 80px;
+        }
+        .item {
+            display: flex;
+            @media screen and (max-width: $break) {
+                flex-direction: column;
+            }
+            img {
+                cursor: pointer;
+                margin-right: 80px;
+            }
+    
+            .right {
+                display: flex;
+                flex-direction: column;
+                .name {
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                }
+                .desc {
+                    margin-bottom: 10px;
+                }
+                .my_position {
+                    margin-bottom: 50px;
+                }
+                
+            }
+        }
     }
 
 

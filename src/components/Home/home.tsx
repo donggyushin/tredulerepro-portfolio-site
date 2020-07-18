@@ -502,11 +502,74 @@ But besides being the platform of choice to run desktops, servers, and embedded 
                         </p>
                     </div>
                 </div>
+
+            </div>
+            <div className="lectures__container">
+                <div onClick={goToPythonAlgorithm} className="card">
+                    <img src={require('../../assets/algorithmimage.jpeg')} alt="" />
+                    <div className="black__view">
+                        <p className="white__text">
+                            Python
+                        </p>
+                        <p className="white__text">
+                            Algorithm
+                        </p>
+                        <p className="white__text">
+                            basic
+                        </p>
+                        <p className="white__text">
+                            course
+                        </p>
+                    </div>
+                    <div className="text__container">
+                        <p className="description">
+                            Let's learn algorithms in Python
+                        </p>
+                        <p className="description">
+                            the most easy programming language
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style={{
+                marginTop: "100px"
+            }} className="my__name">
+                <div className="short_line"></div>
+                <span className="name">
+                    Career
+                </span>
+            </div>
+            <div style={{ height: "40px" }} />
+            <p className="middle__big__text">
+                My career is growing
+            </p>
+            <p className="middle__big__text">
+                like a tree
+            </p>
+            <div className="career__container">
+                <div className="item">
+                    <img onClick={goToJinhakApply} src={require('../../assets/jinhak.png')} />
+                    <div className="right">
+                        <div className="name">Jinhak apply</div>
+                        <div className="desc">
+                            Application service in Korea
+                    </div>
+                        <div className="my_position">
+                            Work as fullstack developer in 서비스사업본부
+                    </div>
+                        <div className="from">
+                            From: 2020. 7. 1
+                    </div>
+                        <div className="to">
+                            To: ~
+                    </div>
+                    </div>
+                </div>
             </div>
             <div className={"above__instagram"} />
             <div className="instagram">
                 <img src={require('../../assets/instagram1.jpg')} alt="insta image 1" className="image1" />
-                <img src={require('../../assets/instagram2.jpg')} alt="insta image 1" className="image2" />
+                <img src={require('../../assets/instagram2.jpg')} alt="insta image 2" className="image2" />
                 <video id={"video"} autoPlay={true} loop={true} className={"video"} src={require('../../assets/instagram3.mp4')}></video>
                 <div className="text__container">
 
@@ -540,8 +603,16 @@ But besides being the platform of choice to run desktops, servers, and embedded 
                 <span>N</span>
                 <span>D</span>
             </div>
-        </div>
+        </div >
     )
+
+    function goToPythonAlgorithm() {
+        window.open('https://www.youtube.com/watch?v=9_b7Ru-WG6I&list=PLG9rdv7aU2N73DKlQ6MZceOtwf1iJxcHJ')
+    }
+
+    function goToJinhakApply() {
+        window.open('http://apply.jinhakapply.com/')
+    }
 
     function goToPokemonTutorial() {
         window.open('https://www.youtube.com/watch?v=QyA7nqBJ-K8&list=PLG9rdv7aU2N7OxDYrDwkd0KNjLjA3eNjr')
