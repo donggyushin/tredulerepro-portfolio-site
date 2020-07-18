@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Skill from '../Skill/skill';
 import { BsFillEnvelopeFill } from 'react-icons/bs'
+import Title from '../Title';
 
 
 function Home() {
@@ -553,16 +554,39 @@ But besides being the platform of choice to run desktops, servers, and embedded 
                         <div className="name">Jinhak apply</div>
                         <div className="desc">
                             Application service in Korea
-                    </div>
+                        </div>
                         <div className="my_position">
                             Work as fullstack developer in 서비스사업본부
-                    </div>
+                        </div>
                         <div className="from">
                             From: 2020. 7. 1
-                    </div>
+                        </div>
                         <div className="to">
                             To: ~
-                    </div>
+                        </div>
+                        <div style={{
+                            height: "40px"
+                        }}></div>
+                        <Title text={"What I did?"} />
+                        <div style={{
+                            height: "30px"
+                        }}></div>
+                        <div className="row">
+                            <div className="dot"></div>
+                            <div>Make University application by oz lifting tools</div>
+                        </div>
+                        <div className="row">
+                            <div className="dot"></div>
+                            <div>MSsql</div>
+                        </div>
+                        <div className="row">
+                            <div className="dot"></div>
+                            <div>Make web page with dot net framework</div>
+                        </div>
+                        <div className="row">
+                            <div className="dot"></div>
+                            <div>Migration worker tools from window form to web form</div>
+                        </div>
                     </div>
                 </div>
             </div>
