@@ -531,6 +531,28 @@ But besides being the platform of choice to run desktops, servers, and embedded 
                         </p>
                     </div>
                 </div>
+                <div onClick={goToReactNativeCrushCourse} className="card">
+                    <img src={require('../../assets/react-native.png')} alt="" />
+                    <div className="black__view">
+                        <p className="white__text">
+                            React
+                        </p>
+                        <p className="white__text">
+                            Native
+                        </p>
+                        <p className="white__text">
+                            Crush
+                        </p>
+                        <p className="white__text">
+                            Course
+                        </p>
+                    </div>
+                    <div className="text__container">
+                        <p className="description">
+                            Let's learn React Native in one course
+                        </p>
+                    </div>
+                </div>
             </div>
             <div style={{
                 marginTop: "100px"
@@ -647,6 +669,10 @@ But besides being the platform of choice to run desktops, servers, and embedded 
         } else {
             return false
         }
+    }
+
+    function goToReactNativeCrushCourse() {
+        window.open('https://www.youtube.com/watch?v=uDyqzObpR8A&t=490s')
     }
 
     function goToPythonAlgorithm() {

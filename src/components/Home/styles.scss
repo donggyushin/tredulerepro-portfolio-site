@@ -182,7 +182,7 @@ div:focus {
                 .text__container {
                     width: 99.6%;
                     border: 1px solid gainsboro;
-                    height: 160px;
+                    padding-bottom: 20px;
                     margin-top: -5px;
                     display: flex;
                     justify-content: center;
@@ -238,7 +238,7 @@ div:focus {
                 .text__container {
                     width: 99.6%;
                     border: 1px solid gainsboro;
-                    height: 160px;
+                    padding-bottom: 20px;
                     @media screen and (max-width:$break) {
                         height: 120px;
                     }
@@ -299,7 +299,7 @@ div:focus {
                 cursor: pointer;
                 width: 99.6%;
                     border: 1px solid gainsboro;
-                    height: 160px;
+                    padding-bottom: 20px;
                     margin-top: -5px;
                     display: flex;
                     justify-content: center;
@@ -936,8 +936,7 @@ div:focus {
         display: flex;
         align-items: flex-start;
         @media screen and (max-width: $break) {
-            width: 100%;
-            padding-left: 80px;
+            width: 90%;
             margin-top: 50px;
         }
         .item {
