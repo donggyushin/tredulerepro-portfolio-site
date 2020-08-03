@@ -273,8 +273,9 @@ But besides being the platform of choice to run desktops, servers, and embedded 
                 <p className="text">
                   See attendance progress, mileages, schedules, menus, maps,
                   notices. You can use your QRcode to verify yourself at
-                  everywhere in Korean Bible University (test account: ilar9410
-                  / bible7890)
+                  everywhere in Korean Bible University. I used Typescript,
+                  express, React, Redux, Redux-thunk (test account: ilar9410 /
+                  bible7890)
                 </p>
               </div>
             </div>
