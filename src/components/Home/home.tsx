@@ -459,13 +459,18 @@ But besides being the platform of choice to run desktops, servers, and embedded 
             />
           </div>
           <div className="title">
-            <p>Showing different files on the same port in Nginx</p>
+            {/* <p>Showing different files on the same port in Nginx</p> */}
+            <p>같은 포트에서 다른 url로 여러 웹사이트를 배포하는 방법</p>
           </div>
           <div className="contents">
-            <p>
+            {/* <p>
               Let's see how we can show a lot of different static files on the
               same port in Nginx so that we can deploy a lot of web pages on the
               one server like a pro.
+            </p> */}
+            <p>
+              Nginx의 같은 포트 내에서 여러 다른 종류의 정적 파일들을 보여주는 방법에 대해서 알아보고
+              한 서버에 여러 웹사이트들을 배포하는 방법에 대해서 알아봅시다.
             </p>
           </div>
         </div>
@@ -501,13 +506,18 @@ But besides being the platform of choice to run desktops, servers, and embedded 
             />
           </div>
           <div className="title">
-            <p>Web application made with python openCV module</p>
+            {/* <p>Web application made with python openCV module</p> */}
+            <p>이미지 변형 웹 프로젝트</p>
           </div>
           <div className="contents">
-            <p>
+            {/* <p>
               We made a web application that fits screwed image and makes a
               black&white image to a colorful image by using python openCV
               module and React framework.!
+            </p> */}
+            <p>
+              비뚫어진 이미지를 똑바로 본것처럼 이미지를 펴는 기능과,
+              흑백 사진들을 칼라사진으로 바꿔주는 웹 프로젝트입니다.
             </p>
           </div>
         </div>
@@ -543,7 +553,8 @@ But besides being the platform of choice to run desktops, servers, and embedded 
             <p>My Github</p>
           </div>
           <div className="contents">
-            <p>You can check my github here!!!</p>
+            {/* <p>You can check my github here!!!</p> */}
+            <p>제 깃허브 구경오세요</p>
           </div>
         </div>
       </div>
@@ -611,8 +622,10 @@ But besides being the platform of choice to run desktops, servers, and embedded 
             <p className="white__text">course</p>
           </div>
           <div className="text__container">
-            <p className="description">Let's learn algorithms in Python</p>
-            <p className="description">the most easy programming language</p>
+            {/* <p className="description">Let's learn algorithms in Python</p>
+            <p className="description">the most easy programming language</p> */}
+            <p className="description">가장 쉬운 언어인 파이썬으로</p>
+            <p className="description">같이 알고리즘을 공부해봐요</p>
           </div>
         </div>
         <div onClick={goToReactNativeCrushCourse} className="card">
@@ -624,8 +637,11 @@ But besides being the platform of choice to run desktops, servers, and embedded 
             <p className="white__text">Course</p>
           </div>
           <div className="text__container">
-            <p className="description">
+            {/* <p className="description">
               Let's learn React Native in one course
+            </p> */}
+            <p className="description">
+              리액트 네이티브 공부해보기
             </p>
           </div>
         </div>
