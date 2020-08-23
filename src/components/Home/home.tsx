@@ -1,12 +1,13 @@
-import React from "react";
 import "./styles.scss";
-//@ts-ignore
-import Fade from "react-reveal/Fade";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Skill from "../Skill/skill";
+
 import { BsFillEnvelopeFill } from "react-icons/bs";
+//@ts-ignore
+import Fade from "react-reveal/Fade";
+import React from "react";
+import Skill from "../Skill/skill";
+import Slider from "react-slick";
 import Title from "../Title";
 
 function Home() {
@@ -33,7 +34,8 @@ function Home() {
       <div className="my__name">
         <Fade left cascade>
           <div className="short_line"></div>
-          <span className="name">Shin Donggyu</span>
+          {/* <span className="name">Shin Donggyu</span> */}
+          <span className="name">신동규</span>
         </Fade>
       </div>
       <div
@@ -43,8 +45,10 @@ function Home() {
       />
       <div className="introduce__me">
         <Fade left cascade>
-          <p className="one">Making application that makes your life</p>
-          <p className="three">fun and convenient</p>
+          {/* <p className="one">Making application that makes your life</p>
+          <p className="three">fun and convenient</p> */}
+          <p className="one">당신의 삶을 더욱 재미있고 편리하게 만들어주는 어플리케이션을 개발하는 개발자 신동규입니다.</p>
+
         </Fade>
       </div>
       <div className="under__introduce__me" />
@@ -61,7 +65,7 @@ function Home() {
       <div className="my__name">
         {/* <Fade left cascade> */}
         <div className="short_line"></div>
-        <span className="name">Who I am?</span>
+        <span className="name">저는 누구일까요?</span>
         {/* </Fade> */}
       </div>
       <div
@@ -70,7 +74,7 @@ function Home() {
         }}
       />
       {/* <Fade left cascade> */}
-      <p className="middle__big__text">I am ...</p>
+      <p className="middle__big__text">저는 ..</p>
       {/* </Fade> */}
       <div
         style={{
@@ -79,30 +83,44 @@ function Home() {
       />
       {/* <Fade bottom cascade> */}
       <div className="plane__text__container">
-        <p className="plane__text">
+        {/* <p className="plane__text">
           A developer who loves music and developing :) I enjoy making
           applications that can make people fun and convenient. I’m a fool stack
           developer, I have more concentrated on front-end development.
+        </p> */}
+        <p className="plane__text">
+          저는 음악과 개발을 사랑하는 개발자입니다 :) 저는 사람들의 삶을 재미있고 윤택하게 만들어주는
+          어플리케이션을 개발하는 것을 즐기는 풀스택 개발자입니다. 하지만 현재에는 프론트엔드쪽에
+          더욱 집중을 하고있어요.
         </p>
         <div
           style={{
             height: "40px",
           }}
         />
-        <p className="plane__text">
+        {/* <p className="plane__text">
           Mostly, I have worked on area where web and mobile development. I
           really like to challenge to new areas which I’ve never experienced
           before, so I’m always ready to enter into any areas.
+        </p> */}
+        <p className="plane__text">
+          저는 주로 웹과 모바일 개발을 해왔습니다. 이전에 경험해보지 못했었던 새로운
+          분야에 도전하는것을 정말로 좋아합니다. 어떤 분야에든지 도전할 생각이 있습니다.
         </p>
         <div
           style={{
             height: "40px",
           }}
         />
-        <p className="plane__text">
+        {/* <p className="plane__text">
           I’m not a career position yet, but I had managed pretty lot of
           services during my University and I’m currently managing two services
           on the both side of web and App Store.
+        </p> */}
+        <p className="plane__text">
+          저는 현재 경력자는 아닙니다. 하지만, 학창시절 동안 수많은 프로젝트를 진행해 왔었고
+          현재에도 2개의 실서비스와 새롭게 준비하고 있는 실서비스 프로젝트또한 있습니다.
+          현재 웹과 앱스토어에 런칭중인 서비스들이 있습니다.
         </p>
       </div>
 
@@ -110,11 +128,11 @@ function Home() {
 
       <div className="my__name">
         <div className="short_line"></div>
-        <span className="name">My skills</span>
+        <span className="name">기술들</span>
       </div>
       <div style={{ height: "40px" }} />
-      <p className="middle__big__text">If I'm not good at,</p>
-      <p className="middle__big__text">That is not my skill</p>
+      <p className="middle__big__text">능숙하지 않다면,</p>
+      <p className="middle__big__text">기술이라 하지 않습니다.</p>
       <div className={"under__skills"} />
       <div className={"slider__container"}>
         <Slider {...settings}>
@@ -248,11 +266,11 @@ But besides being the platform of choice to run desktops, servers, and embedded 
           <div className="top">
             <div className="my__name">
               <div className="short_line"></div>
-              <span className="name">Recent projects</span>
+              <span className="name">최근 프로젝트</span>
             </div>
             <div style={{ height: "40px" }} />
-            <p className="middle__big__text">Thoughtfully designed,</p>
-            <p className="middle__big__text">confidently crafted.</p>
+            <p className="middle__big__text">신중하게 생각하고,</p>
+            <p className="middle__big__text">자신감있게 만들자</p>
           </div>
           <div
             style={{
@@ -263,19 +281,23 @@ But besides being the platform of choice to run desktops, servers, and embedded 
             <div className="image__container">
               <img id={"image1"} src={require("../../assets/image2.jpg")} />
               <div className="text__container2">
-                <span>BIBLE</span>
-                <span>BOT</span>
+                <span>성서봇</span>
+                {/* <span>BOT</span> */}
               </div>
             </div>
             <div className="text__container">
               <div className="inner__container">
-                <p className="title">BIBLE BOT</p>
-                <p className="text">
+                <p className="title">성서봇</p>
+                {/* <p className="text">
                   See attendance progress, mileages, schedules, menus, maps,
                   notices. You can use your QRcode to verify yourself at
                   everywhere in Korean Bible University. I used Typescript,
                   express, React, Redux, Redux-thunk (test account: ilar9410 /
                   bible7890)
+                </p> */}
+                <p className="text">
+
+                  python crawling 서버로 채플일수, 학식메뉴, 시간표, 출석정보, 학사일정, 학교 게시판 등을 모두 조회할 수 있는 웹 어플리케이션입니다. 총 4명의 개발자가 참여했으며 결과물로는 웹 어플리케이션, ios / android 어플리케이션이 있습니다. 저는 웹 어플리케이션 제작을 맡았으며 Typescript, 함수형 컴포넌트 기반의 React, Redux-Thunk, Nginx, Docker, Jenkins, Nodejs, Express 를 사용하였습니다. 크롤링 서버는 작업하지 않았으나, 학교 영양사님이 당일의 학식을 올려서 학식에 대한 데이터를 저장하는 백엔드는 제가 작업하였습니다.  테스트 계정으로는 id: ilar9410, pw: bible7890 계정을 이용해주시면 됩니다.
                 </p>
               </div>
             </div>
@@ -292,7 +314,7 @@ But besides being the platform of choice to run desktops, servers, and embedded 
               <div className="inner__container">
                 <p className="title">TREDULER TODO</p>
                 <p className="text">
-                  The most simple todo application in the world
+                  앱스토어에서 가장 심플한 투두리스트 :)
                 </p>
               </div>
             </div>
@@ -303,17 +325,18 @@ But besides being the platform of choice to run desktops, servers, and embedded 
           <div className="image__container" onClick={goToAppStore}>
             <img src={require("../../assets/image3.jpg")} alt="" />
             <div className="text__in__container">
-              <span>LOVE</span>
+              {/* <span>LOVE</span>
               <span>OF</span>
-              <span>MIDTERM</span>
+              <span>MIDTERM</span> */}
+              <span>중간의</span>
+              <span>연애</span>
             </div>
           </div>
           <div className="text__container" onClick={goToAppStore}>
             <div className="inner__container">
-              <p className="title">LOVE OF MIDTERM</p>
+              <p className="title">중간의 연애</p>
               <p className="text">
-                Take an exam from whoever you want to chat. Pass the exam, Start
-                chatting from the topics which are from the person.
+                성서봇 웹 어플리케이션을 만들고 난 이후 모바일 어플리케이션에도 관심이 생겨서 swift라는 언어를 공부해보고 학교 졸업작품을 위해 제작한 데이팅 어플리케이션입니다. 백엔드는 Firebase를 사용하였으며 현재도 앱스토어에 런칭중입니다. 자신이 등록한 주소지를 기반으로 상대방과의 거리, 이미지 업로드, 실시간 채팅 등의 기능을 구현하였습니다.
               </p>
             </div>
           </div>
@@ -330,10 +353,28 @@ But besides being the platform of choice to run desktops, servers, and embedded 
               <div className="inner__container">
                 <p className="title">KBU STUDY RESERVATION MANAGEMENT SYSTEM</p>
                 <p className="text">
-                  Korean Bible University study room reservation management
-                  program. Students can make a reservation, enter study room,
-                  exit study room by using qrcode from bible bot
-                  application.(test account: test/1234)
+                  성서봇 연계 프로젝트로 성서봇 디지털 모바일 학생증에서 발급되어지는 qrcode로 학생증 없이도 손쉽게 스터디실 예약 및 이용을 가능하게 한 프로젝트입니다. React와 Express를 이용하여 개발하였고 현재 ubuntu 18.04 서버에서 작동중에 있습니다.
+
+                  (테스트 계정: ilar9410 / bible7890)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="second__card" onClick={goToTredulerTodo}>
+            <div className="image__container">
+              <img src={require("../../assets/image6.jpg")} alt="" />
+              <div className="text__container__in__image__container">
+                {/* <span>TREDULER</span>
+                <span>TODO</span> */}
+                <span>맛집찾아줘</span>
+              </div>
+            </div>
+            <div className="text__container">
+              <div className="inner__container">
+                <p className="title">맛집찾아줘</p>
+                <p className="text">
+                  현재 제작중인 어플리케이션입니다. React-Native와 Express를 이용해서 제작중에 있습니다. 유저의 디바이스의 경도와 위도 정보를 기반으로 현재 유저의 주소를 네이버 API를 이용해 얻어내고, 해당 주소를 기반으로 한 네이버 페이지에서 근처 맛집에 대한 정보를 카테고리 별로 분류해서 데이터를 가져와 유저에게 렌더링해줍니다. m.place.naver.com 페이지에서 데이터를 렌더링해오며, 자바스크립트로 동적으로 렌더링이 되어지는 페이지이기 때문에 일반적인 ajax get 메서드로는 스크롤링이 불가능하여서 puppeteer라는 nodejs 모듈을 이용하여 동적으로 브라우저를 컨트롤링하여 데이터를 크롤링해오고 있습니다. 현재 서버는 개발이 완료되어져서 ubuntu 환경에서 돌아가고 있으며 react-native로 모바일 어플리케이션 제작중에 있습니다. Typescript 기반의 react-native와 Redux, Redux-thunk 등을 이용해 개발진행중이고, 백엔드는 Typescript 기반의 Express 서버를 돌리고 있으며 ubuntu 18.04 서버에 배포중입니다. 제작하는 과정은 유튜브에 실시간 라이브코딩이라는 제목으로 업로드하고 있는 중입니다. 궁금하시다면
+                  https://www.youtube.com/watch?v=AsF_FAEk4Oo&t=185s 이곳에서 확인해보실 수 있으십니다.
                 </p>
               </div>
             </div>
@@ -345,20 +386,25 @@ But besides being the platform of choice to run desktops, servers, and embedded 
       <div className="school">
         <div className="my__name">
           <div className="short_line"></div>
-          <span className="name">University</span>
+          <span className="name">대학교</span>
         </div>
         <div style={{ height: "40px" }} />
-        <p className="middle__big__text">Small,</p>
-        <p className="middle__big__text">but strong</p>
+        <p className="middle__big__text">작지만,</p>
+        <p className="middle__big__text">강하다</p>
         <div style={{ height: "100px" }} />
         <div className="container">
           <div className="left">
             <div className="text__container">
-              <p>
+              {/* <p>
                 Korea Bible University is a university located in Nowon-Gu Seoul
                 si. Computer software major’s history is not long however
                 produced a lot of great developers so I’m very proud of my
                 university
+              </p> */}
+              <p>
+                한국성서대학교는 서울시 노원구에 위치한 대학교입니다. 컴퓨터 소프트웨어 학과의
+                역사는 그리 길지않지만, 훌륭한 개발자 선배님들을 많이 배출한 학교입니다.
+                저는 저의 학교가 자랑스럽습니다 :)
               </p>
             </div>
           </div>
@@ -366,9 +412,10 @@ But besides being the platform of choice to run desktops, servers, and embedded 
           <div className="right">
             <img src={require("../../assets/kbu.jpg")} alt="" />
             <div onClick={goToKBUSite} className="text__container">
-              <p>KOREA</p>
+              {/* <p>KOREA</p>
               <p>BIBLE</p>
-              <p>University</p>
+              <p>University</p> */}
+              <p>한국성서대학교</p>
             </div>
           </div>
         </div>
@@ -377,11 +424,13 @@ But besides being the platform of choice to run desktops, servers, and embedded 
       <div style={{ height: "350px" }} />
       <div className="my__name">
         <div className="short_line"></div>
-        <span className="name">Other sites</span>
+        <span className="name">다른 활동들</span>
       </div>
       <div style={{ height: "40px" }} />
-      <p className="middle__big__text">You got more</p>
-      <p className="middle__big__text">interesting to me?</p>
+      {/* <p className="middle__big__text">You got more</p>
+      <p className="middle__big__text">interesting to me?</p> */}
+      <p className="middle__big__text">저에 대해서</p>
+      <p className="middle__big__text">더 알고싶으신가요?</p>
       <div className="introduce__medium">
         <div className="title">Blog Medium</div>
         <div onClick={goToMedium2} className="medium__popular__post__container">
@@ -501,27 +550,36 @@ But besides being the platform of choice to run desktops, servers, and embedded 
       <div className="margin__above__youtube__lectures"></div>
       <div className="my__name">
         <div className="short_line"></div>
-        <span className="name">Lectures</span>
+        <span className="name">강의</span>
       </div>
       <div style={{ height: "40px" }} />
-      <p className="middle__big__text">I teaches</p>
-      <p className="middle__big__text">programming on online</p>
+      {/* <p className="middle__big__text">I teaches</p>
+      <p className="middle__big__text">programming on online</p> */}
+      <p className="middle__big__text">저는 온라인에서</p>
+      <p className="middle__big__text">수업도 하고있습니다</p>
       <div className="lectures__container">
         <div onClick={goToSwiftBasicTutorial} className="card">
           <img src={require("../../assets/lectureImage1.jpg")} alt="" />
           <div className="black__view">
-            <p className="white__text">IOS</p>
+            {/* <p className="white__text">IOS</p>
             <p className="white__text">development</p>
             <p className="white__text">basic</p>
-            <p className="white__text">course</p>
+            <p className="white__text">course</p> */}
+            <p className="white__text">IOS</p>
+            <p className="white__text">기초 강좌</p>
+
           </div>
           <div className="text__container">
-            <p className="description">
+            {/* <p className="description">
               Let's learn how to make an ios application without storyboard!
             </p>
             <p className="description">
               I'm sure it will really helpful for you.
+            </p> */}
+            <p className="description">
+              스토리 보드 없이 ios 앱을 개발하는 방법!
             </p>
+
           </div>
         </div>
         <div onClick={goToPokemonTutorial} className="card">
@@ -531,10 +589,14 @@ But besides being the platform of choice to run desktops, servers, and embedded 
             <p className="white__text">Book</p>
           </div>
           <div className="text__container">
-            <p className="description">Let's build pokemon book application.</p>
+            {/* <p className="description">Let's build pokemon book application.</p>
             <p className="description">
               You can learn how to build an app beatuiful and how to implement
               awesome animation effect!
+            </p> */}
+            <p className="description">포켓몬 도감 앱을 개발해보자.</p>
+            <p className="description">
+              애니메이션 효과를 줘서 아름다운 도감앱을 만들어봐요
             </p>
           </div>
         </div>
@@ -575,11 +637,13 @@ But besides being the platform of choice to run desktops, servers, and embedded 
         className="my__name"
       >
         <div className="short_line"></div>
-        <span className="name">Career</span>
+        <span className="name">경력</span>
       </div>
       <div style={{ height: "40px" }} />
-      <p className="middle__big__text">My career is growing</p>
-      <p className="middle__big__text">like a tree</p>
+      {/* <p className="middle__big__text">My career is growing</p>
+      <p className="middle__big__text">like a tree</p> */}
+      <p className="middle__big__text">나무처럼 쑥쑥자라날</p>
+      <p className="middle__big__text">저의 경력란입니다. </p>
       {/* <div className="career__container">
                 <div className="item">
                     <img onClick={goToJinhakApply} src={require('../../assets/jinhak.png')} />
