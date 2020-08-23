@@ -360,7 +360,7 @@ But besides being the platform of choice to run desktops, servers, and embedded 
               </div>
             </div>
           </div>
-          <div className="second__card" onClick={goToTredulerTodo}>
+          <div className="second__card" onClick={goToMatzip}>
             <div className="image__container">
               <img src={require("../../assets/image6.jpg")} alt="" />
               <div className="text__container__in__image__container">
@@ -771,6 +771,10 @@ But besides being the platform of choice to run desktops, servers, and embedded 
       </div>
     </div>
   );
+
+  function goToMatzip() {
+    window.open("https://www.youtube.com/watch?v=AsF_FAEk4Oo&t=185s");
+  }
 
   function mobileCheck(): boolean {
     if (window.innerWidth < 700) {
